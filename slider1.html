@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Login</title>
+ 
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--These 4 external Files are necessary for Owl to function-->
+
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.carousel.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.theme.css">
+  -->
+
+  <!--This link is both owl CSS files combined into one-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.owlcarousel@1.31(owl.carousel.css+owl.theme.css)">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+
+  <!--<script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.31/owl.carousel.min.js"></script>
+  <style>-->
+
+  <!--This tag is both JS files combined-->
+  <script src="https://cdn.jsdelivr.net/g/jquery@2.2.4,jquery.owlcarousel@1.31"></script>
+  <style>
+    /*
+    | SVG Nav Arrow Style
+    */
+    /* https://gist.github.com/seeRead/11229083 */
+    div.owl-next
+    {
+      display: hidden !important;
+    }
+    .bottom-left{
+      position:absolute;
+       left: 36px;
+      color: black;
+        bottom:2px;
+      background-color:lightgrey;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .owl-origion
+    {
+      -webkit-perspective: 800px;
+      perspective: 800px;
+    }
+    .prod-slider-container {
+      position: relative;
+      font-family: font-awesome;
+      margin-top: 200px;
+      height: 100%;
+      width: 100%;
+    }
+    .owl-buttons {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .owl-item
+    {
+      width:380px !important;
+    }
+    
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+    }
+    i.fa {
+      cursor: pointer;
+      position: absolute;
+      font-size: 60px;
+      padding-top: 8px;
+      height: 64px;
+      width: 72px;
+      color: rgba(0, 0, 0, .5);
+      background: rgba(0, 75, 222, .7);
+      border-radius: 50%;
+      display: table-cell;
+    }
+    
+   
+    .owl-prev,
+    .owl-next {
+      background-color: transparent;
+      border: 0px none transparent;
+      width: 0px;
+      height: 0px;
+    }
+    .owl-perv {
+      left: 0;
+    }
+    .owl-next {
+      right: 72px;
+    }
+    .item {
+      /* outline: 3px solid grey; */
+      /* border:3px solid grey; */
+      width: 300px;
+    }
+    .image{
+      width:300px;
+      /* heigth:450px;  */
+    }
+    h2
+     {
+        font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+     }
+#box
+ {
+  width: 250px;
+  border-radius: 11px;
+  /* padding: 50px; */
+  /* height:30%; */
+  background-color: white;
+  /* border-color: 2px solid grey; */
+  margin: 20px;
+  box-shadow:3px 3px 5px 1px rgba(0, 0, 0, 0.2); 
+
+}
+img
+{
+    width:100%;height:100%;padding:0;
+    background-size:cover;
+}
+#course_name
+{
+    padding:0px;
+    padding-left:5px;
+    margin-top:5px;
+}
+#course_dur
+{
+    padding-left: 5px;
+}
+    </style>
+</head>
+
+<body>
+  <!-- + PRODUCT SLIDERS -->
+  <div class="prod-slider-container">
+    <div class="inner-container">
+      <div class="slider_header_text">
+       </div>
+    </div>
+
+    <div class="owl-carousel" style="width:80%;left:5%;">
+
+      <div class="item">
+        <div class="col-lg-4" id="box">
+          <div class="row">
+                   
+            <center>  <img src="partner.jpg"></center>
+          
+          </div>
+          
+          <div class="row" id="course_name" >
+          <div style="font-size: 1.5em;">
+              {{ Python Course 1}}
+          </div>
+                  </div>
+          <div class="row" id="
+course_dur">
+                  <div style="font-size:1.2em">
+              {{Manish Pandey }}
+              </div>
+          </div>
+          <div class="row" id="course_dur">
+              <div style="font-size:1.2em">
+              {{8 weeks}}
+          </div>
+           </div>
+      </div>
+      </div>
+      <div class="item">
+        <div class="col-lg-4" id="box">
+          <div class="row">
+                   
+            <center>  <img src="partner.jpg"></center>
+          
+          </div>
+          
+          <div class="row" id="course_name" >
+          <div style="font-size: 1.5em;">
+              {{ Python Course 2}}
+          </div>
+                  </div>
+          <div class="row" id="
+course_dur">
+                  <div style="font-size:1.2em">
+              {{Manish Pandey }}
+              </div>
+          </div>
+          <div class="row" id="course_dur">
+              <div style="font-size:1.2em">
+              {{8 weeks}}
+          </div>
+           </div>
+      </div>
+      </div>
+      <div class="item">
+        <div class="col-lg-4" id="box">
+          <div class="row">
+                   
+            <center>  <img src="partner.jpg"></center>
+          
+          </div>
+          
+          <div class="row" id="course_name" >
+          <div style="font-size: 1.5em;">
+              {{ Python Course 3}}
+          </div>
+                  </div>
+          <div class="row" id="
+course_dur">
+                  <div style="font-size:1.2em">
+              {{Manish Pandey }}
+              </div>
+          </div>
+          <div class="row" id="course_dur">
+              <div style="font-size:1.2em">
+              {{8 weeks}}
+          </div>
+           </div>
+      </div>
+      </div>
+      <div class="item">
+        <div class="col-lg-4" id="box">
+          <div class="row">
+                   
+            <center>  <img src="partner.jpg"></center>
+          
+          </div>
+          
+          <div class="row" id="course_name" >
+          <div style="font-size: 1.5em;">
+              {{ Python Course 4}}
+          </div>
+                  </div>
+          <div class="row" id="
+course_dur">
+                  <div style="font-size:1.2em">
+              {{Manish Pandey }}
+              </div>
+          </div>
+          <div class="row" id="course_dur">
+              <div style="font-size:1.2em">
+              {{8 weeks}}
+          </div>
+           </div>
+      </div>
+      </div>
+      <div class="item">
+        <div class="col-lg-4" id="box">
+          <div class="row">
+                   
+            <center>  <img src="partner.jpg"></center>
+          
+          </div>
+          
+          <div class="row" id="course_name" >
+          <div style="font-size: 1.5em;">
+              {{ Python Course 5}}
+          </div>
+                  </div>
+          <div class="row" id="
+course_dur">
+                  <div style="font-size:1.2em">
+              {{Manish Pandey }}
+              </div>
+          </div>
+          <div class="row" id="course_dur">
+              <div style="font-size:1.2em">
+              {{8 weeks}}
+          </div>
+           </div>
+      </div>
+      </div>
+
+       <div class="item">
+        <div class="col-lg-4" id="box">
+          <div class="row">
+                   
+            <center>  <img src="partner.jpg"></center>
+          
+          </div>
+          
+          <div class="row" id="course_name" >
+          <div style="font-size: 1.5em;">
+              {{ Python Course 6}}
+          </div>
+                  </div>
+          <div class="row" id="
+course_dur">
+                  <div style="font-size:1.2em">
+              {{Manish Pandey }}
+              </div>
+          </div>
+          <div class="row" id="course_dur">
+              <div style="font-size:1.2em">
+              {{8 weeks}}
+          </div>
+           </div>
+      </div>
+      </div>
+
+
+
+      <div class="item">
+        <div class="col-lg-4" id="box">
+          <div class="row">
+                   
+            <center>  <img src="partner.jpg"></center>
+          
+          </div>
+          
+          <div class="row" id="course_name" >
+          <div style="font-size: 1.5em;">
+              {{ Python Course 7}}
+          </div>
+                  </div>
+          <div class="row" id="
+course_dur">
+                  <div style="font-size:1.2em">
+              {{Manish Pandey }}
+              </div>
+          </div>
+          <div class="row" id="course_dur">
+              <div style="font-size:1.2em">
+              {{8 weeks}}
+          </div>
+           </div>
+      </div>
+      </div>
+    </div>
+    <!--.owl-carousel-->
+
+
+  </div>
+  <!--.prod-slider-container-->
+
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        items: 3,
+        interval:false,
+        /*autoPlay: 3000,*/
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 3],
+        navigation: true,
+       navigationText: [
+          "<i class='fa fa-chevron-left'></i>",
+          "<i class='fa fa-chevron-right'></i>"
+        ]
+      });
+    });
+  </script> 
+
+</body>
+
+
+</html>
